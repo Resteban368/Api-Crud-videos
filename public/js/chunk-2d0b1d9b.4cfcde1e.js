@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b1d9b"],{2238:function(e,n,o){"use strict";o.r(n);var t=o("7a23");function c(e,n,o,c,r,a){var p=Object(t["resolveComponent"])("router-view");return Object(t["openBlock"])(),Object(t["createBlock"])(p,{key:e.$route.path})}var r=Object(t["defineComponent"])({name:"companiesPage"}),a=o("6b0d"),p=o.n(a);const b=p()(r,[["render",c]]);n["default"]=b}}]);
+//# sourceMappingURL=chunk-2d0b1d9b.4cfcde1e.js.map

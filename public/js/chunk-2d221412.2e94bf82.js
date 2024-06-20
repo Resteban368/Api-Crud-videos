@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d221412"],{ca20:function(n,c,t){"use strict";function e(n,c){return"Chat"}t.r(c);var o=t("6b0d"),r=t.n(o);const u={},a=r()(u,[["render",e]]);c["default"]=a}}]);
+//# sourceMappingURL=chunk-2d221412.2e94bf82.js.map
