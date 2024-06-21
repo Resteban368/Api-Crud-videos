@@ -98,7 +98,7 @@ class VideoController extends Controller
         try {
             $data = $request->except('video');
             $data['user_id'] = auth()->user()->id;
-            if ($request->video && !strpos($request->video, 'storage')) {
+            if ($request->video ) {
                 $media = $request->video;
                 $path = $media->store('videos', 'public');
                 $data['path'] = 'storage/' . $path;
@@ -182,7 +182,7 @@ class VideoController extends Controller
     {
         $video = Video::whereId($id)->first();
         $data = $request->all();
-        if ($request->video && !strpos($request->video, 'storage')) {
+        if ($request->video ) {
             $media = $request->video;
             $path = $media->store('videos', 'public');
             $data['path'] = 'storage/' . $path;

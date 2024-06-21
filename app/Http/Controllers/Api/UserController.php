@@ -75,7 +75,7 @@ class UserController extends Controller
             $data['remember_token'] = bin2hex(openssl_random_pseudo_bytes((6 - (6 % 2)) / 2));
             $data['password'] = bcrypt($request->password);
             $user = User::create($data);
-            if ($request->photo && !strpos($request->photo, 'storage')) {
+            if ($request->photo ) {
                 $image = $request->photo;
                 $path = $image->store('user_avatar', 'public');
                 $user->photo = 'storage/' . $path;
@@ -173,7 +173,7 @@ class UserController extends Controller
         }
         $data = $request->all();
         $data['remember_token'] = bin2hex(openssl_random_pseudo_bytes((6 - (6 % 2)) / 2));
-        if ($request->photo && !strpos($request->photo, 'storage')) {
+        if ($request->photo ) {
             $image = $request->photo;
             $path = $image->store('user_avatar', 'public');
             $data['photo'] = 'storage/' . $path;
